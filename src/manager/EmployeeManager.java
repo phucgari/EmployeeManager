@@ -1,15 +1,20 @@
 package manager;
 
 import employee.Employee;
+import employee.FullTimeEmployee;
+import employee.PartTimeEmployee;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
 
 public class EmployeeManager {
-    ArrayList<Employee> employees=new ArrayList<>();
+    List<Employee> employees=new ArrayList<>();
 
     public EmployeeManager() {
     }
-    public EmployeeManager(ArrayList<Employee> employees) {
+    public EmployeeManager(List<Employee> employees) {
         this.employees = employees;
     }
 
@@ -37,5 +42,42 @@ public class EmployeeManager {
             result+=employee.getRealSalary();
         }
         return result/employees.size();
+    }
+
+    public Employee[] getLowSalaryFullTimeEmployee() {
+        ArrayList<Employee> list=new ArrayList<>();
+        Employee[]result=new Employee[0];
+        for (Employee employee:employees) {
+            if(employee.getRealSalary()<getAveragePaid()&&employee instanceof FullTimeEmployee){
+                list.add(employee);
+            }
+        }
+        if (list.size()==0)return null;
+        return list.toArray(result);
+    }
+
+    public int getTotalSalaryPartTime() {
+        int result = 0;
+        for (Employee employee:employees) {
+            if(employee instanceof PartTimeEmployee)result+=employee.getRealSalary();
+        }
+        return result;
+    }
+
+    public List<Employee> sortFullTimeEmployee() {
+        List<Employee>result=new ArrayList<>();
+        Comparator<Employee> comparator=new Comparator<Employee>() {
+            @Override
+            public int compare(Employee o1, Employee o2) {
+                return o1.getRealSalary()- o2.getRealSalary();
+            }
+        };
+        Collections.sort(employees,comparator);
+        for (Employee employee:employees) {
+            if(employee instanceof FullTimeEmployee){
+                result.add(employee);
+            }
+        }
+        return result;
     }
 }
