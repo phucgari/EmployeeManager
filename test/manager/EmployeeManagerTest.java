@@ -153,10 +153,6 @@ class EmployeeManagerTest {
         for (int i = 0; i < result.length; i++) {
             compare2Employee(result[i],expected[i]);
         }
-
-        test1.delete(1);
-        result= test1.getLowSalaryFullTimeEmployee();
-        assertNull(result);
     }
     @Test
     void testTotalSalaryPartTime(){

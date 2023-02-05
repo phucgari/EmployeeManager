@@ -57,7 +57,6 @@ public class EmployeeManager {
                 list.add(employee);
             }
         }
-        if (list.size()==0)return null;
         return list.toArray(result);
     }
 

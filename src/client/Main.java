@@ -25,10 +25,14 @@ public class Main {
                 "2.Update new Employee by index\n" +
                 "3.Remove an Employee\n" +
                 "4.View Employees\n" +
-                "5.Get out");
+                "5.Get Average Paid Salary\n" +
+                "6.Get Low-Paid FullTime Salary\n" +
+                "7.Get total salary have to paid for PartTimeEmployee\n" +
+                "8.Get FullTimeEmployee in salary order\n" +
+                "9.Get out");
         action=getAction();
         execute(action);
-        }while (action!=5);
+        }while (action!=9);
     }
     private static void execute(int action) {
         switch (action){
@@ -44,8 +48,21 @@ public class Main {
             case 4:
                 viewEmployee();
                 break;
+            case 5:
+                viewAveragePaid();
+                break;
+            case 6:
+                getLowPaidFullTimer();
+                break;
+            case 7:
+                getTotalSalaryForPartTimer();
+                break;
+            case 8:
+                getFullTimeEmployeeInSalaryOrder();
+                break;
         }
     }
+
     private static void addNewEmployee() {
         System.out.println("Add new Employee selected");
         Employee inputEmployee=userInputEmployee();
@@ -77,6 +94,28 @@ public class Main {
         System.out.println("View Employee selected");
         System.out.println(manager);
     }
+    private static void viewAveragePaid() {
+        System.out.println("average Paid is "+manager.getAveragePaid());
+    }
+
+    private static void getLowPaidFullTimer() {
+        System.out.println("List of LowPaid FullTimer: ");
+        for (Employee employee:manager.getLowSalaryFullTimeEmployee()) {
+            System.out.println(employee);
+        }
+    }
+
+    private static void getTotalSalaryForPartTimer() {
+        System.out.println("Total salary of part timer is "+manager.getTotalSalaryPartTime());
+    }
+
+    private static void getFullTimeEmployeeInSalaryOrder() {
+        System.out.println("List of FullTimeEmployee, in order: ");
+        for (Employee employee:manager.sortFullTimeEmployee()) {
+            System.out.println(employee);
+        }
+    }
+
     private static Employee userInputEmployee() {
         int typeOfEmployee;
         typeOfEmployee = getTypeOfEmployee();
