@@ -56,4 +56,14 @@ public abstract class Employee {
         this.id = id;
     }
     public abstract int getRealSalary();
+
+    @Override
+    public String toString() {
+        return  "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                ", phone=" + phone +
+                ", email='" + email + '\''
+                ;
+    }
 }

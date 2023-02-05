@@ -7,11 +7,6 @@ public class FullTimeEmployee extends Employee{
 
     public FullTimeEmployee() {}
 
-    @Override
-    public int getRealSalary() {
-        return salary+bonus-fine;
-    }
-
     public FullTimeEmployee(String id, String name, int age, int phone, String email, int bonus, int fine, int salary) {
         super(id, name, age, phone, email);
         this.bonus = bonus;
@@ -19,6 +14,10 @@ public class FullTimeEmployee extends Employee{
         this.salary = salary;
     }
 
+    @Override
+    public int getRealSalary() {
+        return salary+bonus-fine;
+    }
     public int getBonus() {
         return bonus;
     }
@@ -43,4 +42,13 @@ public class FullTimeEmployee extends Employee{
         this.salary = salary;
     }
 
+    @Override
+    public String toString() {
+        return "FullTimeEmployee{" +
+                super.toString()+
+                ", bonus=" + bonus +
+                ", fine=" + fine +
+                ", salary=" + salary +
+                "} " ;
+    }
 }

@@ -23,4 +23,12 @@ public class PartTimeEmployee extends Employee{
     public void setWorkingHour(int workingHour) {
         this.workingHour = workingHour;
     }
+
+    @Override
+    public String toString() {
+        return "PartTimeEmployee{"+
+                super.toString() +
+                ", workingHour=" + workingHour +
+                "} " ;
+    }
 }

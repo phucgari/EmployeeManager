@@ -19,6 +19,7 @@ public class EmployeeManager {
     }
 
     public void add(Employee employee) {
+        if(employee==null)return;
         employees.add(employee);
     }
 
@@ -27,8 +28,12 @@ public class EmployeeManager {
         return employees.get(index);
     }
     public void update(Employee employee,int index){
+        if(employee==null)return;
         employees.remove(index);
         employees.add(index,employee);
+    }
+    public int size(){
+        return employees.size();
     }
 
     public void delete(int i) {
@@ -77,6 +82,15 @@ public class EmployeeManager {
             if(employee instanceof FullTimeEmployee){
                 result.add(employee);
             }
+        }
+        return result;
+    }
+
+    @Override
+    public String toString() {
+        String result="Employee(s) list:\n";
+        for (Employee employee:employees) {
+            result+=employee.toString()+"\n";
         }
         return result;
     }

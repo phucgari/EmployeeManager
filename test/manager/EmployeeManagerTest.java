@@ -191,4 +191,20 @@ class EmployeeManagerTest {
         expected=new ArrayList<>();
         assertTrue(result.equals(expected));
     }
+    @Test
+    void testToString(){
+        assertEquals("Employee(s) list:\n" +
+                "PartTimeEmployee{id='4', name='11', age=44, phone=999999, email='ddd@mail', workingHour=33} \n" +
+                "FullTimeEmployee{id='33', name='vvvv', age=33, phone=22222, email='fff@mail', bonus=555, fine=3333, salary=22222} \n",test1.toString());
+        assertEquals("Employee(s) list:\n" +
+                "PartTimeEmployee{id='4', name='11', age=44, phone=999999, email='ddd@mail', workingHour=33} \n" +
+                "FullTimeEmployee{id='33', name='vvvv', age=33, phone=22222, email='fff@mail', bonus=555, fine=3333, salary=22222} \n",test1.toString());
+    }
+    @Test
+    void testSize() {
+        assertEquals(2, test1.size());
+        test1.delete(1);
+        assertEquals(1, test1.size());
+        assertEquals(2, test2.size());
+    }
 }

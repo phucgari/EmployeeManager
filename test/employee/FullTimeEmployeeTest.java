@@ -62,4 +62,9 @@ class FullTimeEmployeeTest {
         assertEquals(344,test1.getRealSalary());
         assertEquals(144,test2.getRealSalary());
     }
+    @Test
+    void testToString(){
+        assertEquals("FullTimeEmployee{id='pp', name='test1', age=22, phone=3333344, email='ff@mail.com', bonus=22, fine=11, salary=333} ",test1.toString());
+        assertEquals("FullTimeEmployee{id='ff', name='test2', age=20, phone=33, email='yes@gmail', bonus=33, fine=222, salary=333} ",test2.toString());
+    }
 }

@@ -52,4 +52,10 @@ class PartTimeEmployeeTest {
         assertEquals(2200000,test1.getRealSalary());
         assertEquals(3300000,test2.getRealSalary());
     }
+    @Test
+    void testToString(){
+        assertEquals("PartTimeEmployee{id='44', name='test1', age=33, phone=55, email='pop@gmail', workingHour=22} ",test1.toString());
+        assertEquals("PartTimeEmployee{id='ff', name='test2', age=20, phone=33, email='yes@gmail', workingHour=33} ",test2.toString());
+        PartTimeEmployee test3=new PartTimeEmployee();
+    }
 }

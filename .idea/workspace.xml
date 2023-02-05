@@ -5,8 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="546ad70d-1eef-4f31-b0e6-9fb81b42f621" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/client/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/employee/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/employee/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/employee/FullTimeEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/employee/FullTimeEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/employee/PartTimeEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/employee/PartTimeEmployee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/manager/EmployeeManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/manager/EmployeeManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/employee/FullTimeEmployeeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/employee/FullTimeEmployeeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/employee/PartTimeEmployeeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/employee/PartTimeEmployeeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/manager/EmployeeManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/manager/EmployeeManagerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,8 +23,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -73,6 +79,7 @@
       <workItem from="1675397853191" duration="11006000" />
       <workItem from="1675417208387" duration="2661000" />
       <workItem from="1675432510635" duration="6010000" />
+      <workItem from="1675575283185" duration="8850000" />
     </task>
     <servers />
   </component>
