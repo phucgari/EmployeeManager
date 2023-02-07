@@ -19,7 +19,7 @@ class ReadWriteEmployeeTest {
         expected= new PartTimeEmployee("22","324234",3123,3123123,"4343@mail",321);
         assertEquals(expected.toString(),result.get(1).toString());
 
-        result=ReadWriteEmployee.readObjects("testnull.dat");
+        result=ReadWriteEmployee.readObjects("testNull.dat");
         assertEquals("[]",result.toString());
     }
 }
