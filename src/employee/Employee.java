@@ -1,6 +1,8 @@
 package employee;
 
-public abstract class Employee {
+import java.io.Serializable;
+
+public abstract class Employee implements Serializable {
     private String id;
     private String name;
     private int age;

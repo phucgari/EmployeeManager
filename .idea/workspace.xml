@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="546ad70d-1eef-4f31-b0e6-9fb81b42f621" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/storage/ReadWriteEmployee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/storage/ReadWriteEmployeeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/manager/EmployeeManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/manager/EmployeeManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/employee/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/employee/Employee.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +60,7 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="storage" />
       <recent name="manager" />
       <recent name="employee" />
     </key>
@@ -77,6 +79,7 @@
       <workItem from="1675575283185" duration="8998000" />
       <workItem from="1675587226747" duration="639000" />
       <workItem from="1675592463514" duration="1254000" />
+      <workItem from="1675761458484" duration="3731000" />
     </task>
     <servers />
   </component>
